@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Power Couple AI Playbook — 71 AI Prompts for Couples Who Run a Business Together</title>
+<meta name="description" content="71 copy-paste AI prompts built for entrepreneur couples. Run your business smarter. Plan your life together. One aligned system, two accounts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:   #1B2A4A;
+    --navy2:  #243659;
+    --gold:   #C9A044;
+    --gold-l: #DFC57A;
+    --gold-xl:#EDD99A;
+    --cream:  #F9F8F5;
+    --cream2: #EEE9DE;
+    --warm:   #BDB89A;
+    --text:   #1B2A4A;
+    --muted:  #5A5A5A;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: var(--navy);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 5vw;
+    height: 56px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .nav-brand {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600; font-size: 13px; letter-spacing: 0.1em;
+    color: var(--gold); text-transform: uppercase; text-decoration: none;
+  }
+  .nav-cta {
+    background: var(--gold); color: var(--navy);
+    font-size: 12px; font-weight: 600; letter-spacing: 0.06em;
+    padding: 8px 20px; border-radius: 4px;
+    text-decoration: none; text-transform: uppercase;
+    transition: background 0.2s;
+  }
+  .nav-cta:hover { background: var(--gold-l); }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--navy);
+    padding: 140px 5vw 100px;
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; top: 0; right: 0;
+    width: 320px; height: 320px;
+    background: var(--gold);
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    opacity: 0.12;
+  }
+  .hero-inner {
+    max-width: 780px; margin: 0 auto;
+    position: relative;
+  }
+  .hero-eyebrow {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.14em;
+    color: var(--gold); text-transform: uppercase;
+    margin-bottom: 28px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    display: block; width: 36px; height: 2px;
+    background: var(--gold);
+  }
+  .hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(42px, 7vw, 76px);
+    line-height: 1.05;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold);
+  }
+  .hero-sub {
+    font-size: clamp(16px, 2.5vw, 20px);
+    color: var(--warm);
+    max-width: 560px;
+    margin-bottom: 48px;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+  .hero-sub strong { color: #fff; font-weight: 500; }
+
+  .hero-ctas {
+    display: flex; flex-wrap: wrap; gap: 14px;
+    align-items: center;
+  }
+  .btn-primary {
+    background: var(--gold); color: var(--navy);
+    font-weight: 600; font-size: 15px;
+    padding: 16px 32px; border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+    display: inline-block;
+  }
+  .btn-primary:hover { background: var(--gold-l); transform: translateY(-1px); }
+  .btn-ghost {
+    border: 1.5px solid rgba(201,160,68,0.5); color: var(--gold-l);
+    font-weight: 500; font-size: 15px;
+    padding: 15px 32px; border-radius: 6px;
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s;
+    display: inline-block;
+  }
+  .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+  .hero-note {
+    margin-top: 20px;
+    font-size: 12px; color: var(--warm); opacity: 0.8;
+  }
+
+  .hero-stats {
+    display: flex; flex-wrap: wrap; gap: 0;
+    margin-top: 64px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 36px;
+  }
+  .stat {
+    flex: 1; min-width: 100px;
+    padding-right: 32px;
+  }
+  .stat-n {
+    font-family: 'DM Serif Display', serif;
+    font-size: 42px; color: var(--gold);
+    line-height: 1;
+  }
+  .stat-l {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.1em;
+    color: var(--warm); text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  /* ── PROBLEM ── */
+  .problem {
+    background: var(--cream2);
+    padding: 100px 5vw;
+    border-top: 3px solid var(--gold);
+  }
+  .problem-inner { max-width: 720px; margin: 0 auto; }
+  .label {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.14em;
+    color: var(--gold); text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .problem h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(30px, 4.5vw, 46px);
+    line-height: 1.2; color: var(--navy);
+    margin-bottom: 28px;
+  }
+  .problem p {
+    font-size: 17px; color: var(--muted);
+    line-height: 1.75; margin-bottom: 20px;
+  }
+  .problem p strong { color: var(--navy); font-weight: 500; }
+
+  /* ── SOLUTION ── */
+  .solution {
+    background: var(--cream); padding: 100px 5vw;
+  }
+  .solution-inner { max-width: 900px; margin: 0 auto; }
+  .solution h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(30px, 4.5vw, 46px);
+    line-height: 1.2; color: var(--navy);
+    margin-bottom: 16px;
+  }
+  .solution-lead {
+    font-size: 18px; color: var(--muted);
+    max-width: 620px; margin-bottom: 60px;
+    line-height: 1.7;
+  }
+  .pillars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+  }
+  .pillar {
+    background: var(--cream2);
+    border-radius: 8px; padding: 32px 28px;
+    border-top: 3px solid var(--gold);
+    transition: transform 0.2s;
+  }
+  .pillar:hover { transform: translateY(-3px); }
+  .pillar-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 36px; color: var(--gold);
+    line-height: 1; margin-bottom: 12px;
+  }
+  .pillar h3 {
+    font-size: 16px; font-weight: 600;
+    color: var(--navy); margin-bottom: 10px;
+  }
+  .pillar p {
+    font-size: 14px; color: var(--muted); line-height: 1.6;
+  }
+
+  /* ── USE TOGETHER ── */
+  .together {
+    background: var(--navy); padding: 100px 5vw;
+  }
+  .together-inner { max-width: 780px; margin: 0 auto; }
+  .together .label { color: var(--gold-l); }
+  .together h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(28px, 4vw, 44px);
+    color: #fff; line-height: 1.2; margin-bottom: 24px;
+  }
+  .together h2 em { font-style: italic; color: var(--gold); }
+  .together p {
+    font-size: 17px; color: var(--warm);
+    line-height: 1.75; margin-bottom: 20px;
+  }
+  .together p strong { color: #fff; font-weight: 500; }
+  .tag-row {
+    display: flex; flex-wrap: wrap; gap: 10px;
+    margin-top: 36px;
+  }
+  .tag {
+    background: rgba(201,160,68,0.15);
+    border: 1px solid rgba(201,160,68,0.4);
+    color: var(--gold-l);
+    font-size: 12px; font-weight: 500; letter-spacing: 0.06em;
+    padding: 6px 14px; border-radius: 20px;
+    text-transform: uppercase;
+  }
+
+  /* ── WHAT'S INSIDE ── */
+  .inside { background: var(--cream); padding: 100px 5vw; }
+  .inside-inner { max-width: 900px; margin: 0 auto; }
+  .inside h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(30px, 4.5vw, 46px);
+    color: var(--navy); margin-bottom: 16px;
+  }
+  .inside-lead {
+    font-size: 17px; color: var(--muted);
+    max-width: 580px; margin-bottom: 52px; line-height: 1.7;
+  }
+  .sections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2px;
+    background: var(--cream2);
+    border: 1px solid var(--cream2);
+    border-radius: 8px; overflow: hidden;
+  }
+  .section-row {
+    background: var(--cream);
+    padding: 20px 24px;
+    display: flex; align-items: flex-start; gap: 16px;
+  }
+  .section-row:hover { background: var(--cream2); }
+  .section-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px; color: var(--gold);
+    min-width: 28px; line-height: 1.2; padding-top: 2px;
+  }
+  .section-text {}
+  .section-name {
+    font-size: 14px; font-weight: 600; color: var(--navy);
+    margin-bottom: 2px;
+  }
+  .section-desc {
+    font-size: 12px; color: var(--muted);
+  }
+
+  /* ── FREE KIT ── */
+  .free-kit {
+    background: var(--cream2); padding: 100px 5vw;
+    border-top: 3px solid var(--gold);
+  }
+  .free-kit-inner {
+    max-width: 780px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+    align-items: center;
+  }
+  @media (max-width: 640px) {
+    .free-kit-inner { grid-template-columns: 1fr; gap: 40px; }
+  }
+  .free-kit .label { color: var(--gold); }
+  .free-kit h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(28px, 4vw, 40px);
+    color: var(--navy); line-height: 1.2; margin-bottom: 16px;
+  }
+  .free-kit p {
+    font-size: 15px; color: var(--muted);
+    line-height: 1.7; margin-bottom: 28px;
+  }
+  .kit-features { list-style: none; margin-bottom: 32px; }
+  .kit-features li {
+    font-size: 14px; color: var(--navy);
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    display: flex; gap: 10px; align-items: baseline;
+  }
+  .kit-features li::before {
+    content: '→';
+    color: var(--gold); font-weight: 600; flex-shrink: 0;
+  }
+  .kit-card {
+    background: var(--navy); border-radius: 10px;
+    padding: 40px 32px; text-align: center;
+    border-top: 4px solid var(--gold);
+  }
+  .kit-card-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--warm); margin-bottom: 8px;
+  }
+  .kit-card h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px; color: var(--gold); margin-bottom: 4px;
+  }
+  .kit-card-sub {
+    font-size: 13px; color: var(--warm); margin-bottom: 28px;
+  }
+  .kit-price {
+    font-family: 'DM Serif Display', serif;
+    font-size: 48px; color: #fff; line-height: 1;
+    margin-bottom: 6px;
+  }
+  .kit-price-label {
+    font-size: 11px; color: var(--warm);
+    text-transform: uppercase; letter-spacing: 0.1em;
+    margin-bottom: 28px;
+  }
+  .btn-kit {
+    display: block; width: 100%;
+    background: var(--gold); color: var(--navy);
+    font-weight: 600; font-size: 14px;
+    padding: 14px; border-radius: 6px;
+    text-decoration: none; text-align: center;
+    transition: background 0.2s;
+    margin-bottom: 10px;
+  }
+  .btn-kit:hover { background: var(--gold-l); }
+  .btn-kit-ghost {
+    display: block; width: 100%;
+    border: 1px solid rgba(201,160,68,0.4); color: var(--gold-l);
+    font-weight: 500; font-size: 13px;
+    padding: 12px; border-radius: 6px;
+    text-decoration: none; text-align: center;
+    transition: border-color 0.2s;
+  }
+  .btn-kit-ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+  /* ── TESTIMONIAL ── */
+  .testimonial {
+    background: var(--navy); padding: 80px 5vw;
+  }
+  .testimonial-inner { max-width: 680px; margin: 0 auto; text-align: center; }
+  .quote-mark {
+    font-family: 'DM Serif Display', serif;
+    font-size: 80px; color: var(--gold); line-height: 0.5;
+    margin-bottom: 20px; display: block;
+  }
+  .testimonial blockquote {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(20px, 3vw, 28px);
+    font-style: italic; color: #fff;
+    line-height: 1.5; margin-bottom: 24px;
+  }
+  .testimonial cite {
+    font-size: 13px; color: var(--warm);
+    font-style: normal; letter-spacing: 0.06em;
+  }
+
+  /* ── BUY ── */
+  .buy { background: var(--cream2); padding: 100px 5vw; }
+  .buy-inner { max-width: 680px; margin: 0 auto; text-align: center; }
+  .buy .label { margin-bottom: 20px; }
+  .buy h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(32px, 5vw, 52px);
+    color: var(--navy); line-height: 1.15; margin-bottom: 20px;
+  }
+  .buy h2 em { font-style: italic; color: var(--gold); }
+  .buy-desc {
+    font-size: 17px; color: var(--muted);
+    line-height: 1.7; margin-bottom: 40px; max-width: 520px;
+    margin-left: auto; margin-right: auto;
+  }
+  .price-block {
+    display: inline-flex; align-items: baseline; gap: 8px;
+    margin-bottom: 8px;
+  }
+  .price-amt {
+    font-family: 'DM Serif Display', serif;
+    font-size: 64px; color: var(--navy); line-height: 1;
+  }
+  .price-note {
+    font-size: 13px; color: var(--muted); margin-bottom: 32px;
+  }
+  .btn-buy {
+    display: inline-block;
+    background: var(--navy); color: var(--gold);
+    font-weight: 600; font-size: 16px;
+    padding: 18px 48px; border-radius: 6px;
+    text-decoration: none; letter-spacing: 0.04em;
+    transition: background 0.2s, transform 0.15s;
+    border: 2px solid var(--navy);
+    margin-bottom: 16px;
+  }
+  .btn-buy:hover { background: var(--navy2); transform: translateY(-2px); }
+  .buy-guarantee {
+    font-size: 12px; color: var(--muted);
+    margin-top: 16px;
+  }
+  .buy-includes {
+    display: flex; flex-wrap: wrap; justify-content: center;
+    gap: 8px; margin-top: 36px;
+  }
+  .buy-includes span {
+    font-size: 12px; font-weight: 500; letter-spacing: 0.06em;
+    color: var(--navy); text-transform: uppercase;
+    background: #fff; border: 1px solid var(--cream2);
+    padding: 6px 14px; border-radius: 20px;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy);
+    padding: 40px 5vw;
+    border-top: 2px solid var(--gold);
+    display: flex; flex-wrap: wrap;
+    justify-content: space-between; align-items: center;
+    gap: 16px;
+  }
+  .footer-brand {
+    font-weight: 600; font-size: 13px; letter-spacing: 0.1em;
+    color: var(--gold); text-transform: uppercase;
+  }
+  .footer-links {
+    display: flex; gap: 24px;
+  }
+  .footer-links a {
+    font-size: 12px; color: var(--warm);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-copy {
+    font-size: 11px; color: var(--warm); opacity: 0.6;
+    width: 100%;
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .hero-inner > * {
+    animation: fadeUp 0.7s ease both;
+  }
+  .hero-eyebrow { animation-delay: 0.1s; }
+  .hero h1      { animation-delay: 0.2s; }
+  .hero-sub     { animation-delay: 0.3s; }
+  .hero-ctas    { animation-delay: 0.4s; }
+  .hero-note    { animation-delay: 0.45s; }
+  .hero-stats   { animation-delay: 0.5s; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    .hero-stats { gap: 24px; }
+    .stat { padding-right: 0; }
+    .free-kit-inner { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="#">Power Couple AI</a>
+  <a class="nav-cta" href="https://powercoupleai.gumroad.com/l/azyfkg" target="_blank">Get the Playbook — $22</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">For entrepreneur couples</div>
+    <h1>Stop running your<br>business <em>and</em> your life<br>on separate systems.</h1>
+    <p class="hero-sub">
+      <strong>71 AI prompts built for two.</strong> One aligned system that handles the small stuff
+      so you can focus on what actually matters — together.
+    </p>
+    <div class="hero-ctas">
+      <a class="btn-primary" href="#free-kit">Get the Free Starter Kit</a>
+      <a class="btn-ghost" href="#buy">Buy the Full Playbook — $22</a>
+    </div>
+    <p class="hero-note">Free kit · No credit card · Instant download</p>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-n">71</div><div class="stat-l">Prompts</div></div>
+      <div class="stat"><div class="stat-n">6</div><div class="stat-l">Stacks</div></div>
+      <div class="stat"><div class="stat-n">30</div><div class="stat-l">Day plan</div></div>
+      <div class="stat"><div class="stat-n">2</div><div class="stat-l">Players</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem">
+  <div class="problem-inner">
+    <p class="label">Sound familiar?</p>
+    <h2>You're both working hard.<br>You're just not working <em>together</em>.</h2>
+    <p>You're managing clients, chasing follow-ups, handling the unexpected — and trying to protect time for each other at the same time. The problem isn't effort. <strong>You're already giving everything.</strong></p>
+    <p>The problem is that too much of your mental energy goes toward tasks that don't actually require your brain. Drafting emails. Planning the week. Figuring out what to say in a tricky conversation. Deciding what's for dinner.</p>
+    <p>AI doesn't replace your judgment. <strong>It handles the execution so your judgment can go where it actually counts.</strong> And when both of you are using the same system — that's when things really change.</p>
+    <p>Most people are using AI like a search engine — asking it random questions and getting random answers. <strong>This playbook teaches you to use it like a real assistant</strong> — one that knows your business, your schedule, your goals, and your partner. That shift changes everything about how you manage your home and your professional life.</p>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="solution">
+  <div class="solution-inner">
+    <p class="label">The solution</p>
+    <h2>A system built for two.<br>Not just a list of prompts.</h2>
+    <p class="solution-lead">The Power Couple AI Playbook is designed to weave AI into the actual rhythm of your business and your life — so the small stuff handles itself.</p>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pillar-num">01</div>
+        <h3>Copy, paste, customize.</h3>
+        <p>Every prompt is ready to use. Swap the brackets for your real details and send. No AI experience needed. Close enough works.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">02</div>
+        <h3>Built for your whole life.</h3>
+        <p>Business operations, communication, marketing, lifestyle, family, strategy. Every corner of your life as a working couple — covered.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">03</div>
+        <h3>The 30-Day Challenge.</h3>
+        <p>One action per day that builds the habit. By day 30, AI isn't something you tried once. It's just how you operate.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">04</div>
+        <h3>Two accounts. One system.</h3>
+        <p>You each have your own Claude. USE TOGETHER prompts are designed to run in parallel — then compare what you each got. That's where the real insight lives.</p>
+      </div>
+    </div>
+    <p style="margin-top: 36px; font-size: 14px; color: var(--muted); max-width: 620px; line-height: 1.7;">
+      <strong style="color: var(--navy);">Works with any AI tool.</strong> Prompts work with Claude, ChatGPT, Gemini, or any AI chat platform. Claude is recommended — the Projects Setup and calendar features are built specifically for it, but every prompt delivers results wherever you run it.
+    </p>
+  </div>
+</section>
+
+<!-- USE TOGETHER -->
+<section class="together">
+  <div class="together-inner">
+    <p class="label">The two-player advantage</p>
+    <h2>Most AI tools are built<br>for <em>one</em> person.</h2>
+    <p>This one is built for two. When both of you are running the same system — with your own accounts, your own context loaded in, your own calendars connected — you stop operating in parallel and <strong>start moving like one team.</strong></p>
+    <p>Find free evenings without the back-and-forth. Align on priorities without a formal sit-down. Plan the week in 8 minutes on a Sunday night. Protect your relationship from the creep of business stress.</p>
+    <div class="tag-row">
+      <span class="tag">Week Overview</span>
+      <span class="tag">Weekly Priority Reset</span>
+      <span class="tag">Find Free Time</span>
+      <span class="tag">Meal Planning</span>
+      <span class="tag">Parenting Decisions</span>
+      <span class="tag">Sunday Reset Stack</span>
+      <span class="tag">Vision Clarity</span>
+      <span class="tag">Family Meeting</span>
+    </div>
+  </div>
+</section>
+
+<!-- AI AS ASSISTANT -->
+<section style="background: var(--cream2); padding: 80px 5vw; border-top: 1px solid rgba(27,42,74,0.08);">
+  <div style="max-width: 780px; margin: 0 auto;">
+    <p class="label">A different way to think about AI</p>
+    <h2 style="font-family: 'DM Serif Display', serif; font-size: clamp(28px, 4vw, 44px); color: var(--navy); line-height: 1.2; margin-bottom: 24px;">
+      Not a chatbot.<br>An <em style="font-style: italic; color: var(--gold);">assistant</em> that runs in the background of your life.
+    </h2>
+    <p style="font-size: 17px; color: var(--muted); line-height: 1.75; margin-bottom: 20px; max-width: 660px;">
+      Most people open AI when they're stuck — ask a question, get an answer, close the tab. That's using a chatbot. <strong style="color: var(--navy);">This playbook is built to change that entirely.</strong>
+    </p>
+    <p style="font-size: 17px; color: var(--muted); line-height: 1.75; margin-bottom: 20px; max-width: 660px;">
+      By the time you've gone through the system — set up your Projects, run your first Monday Stack, done the 30-Day Challenge — AI isn't something you open occasionally. It's woven into how you plan your week, communicate with clients, manage your home, and make decisions as a couple.
+    </p>
+    <p style="font-size: 17px; color: var(--muted); line-height: 1.75; max-width: 660px;">
+      <strong style="color: var(--navy);">The goal isn't to use AI more. It's to think less about the small things so you can think more about the big ones.</strong> That's the shift this playbook is built to create — for both of you.
+    </p>
+  </div>
+</section>
+
+<!-- WHAT'S INSIDE -->
+<section class="inside">
+  <div class="inside-inner">
+    <p class="label">What's inside</p>
+    <h2>71 prompts across<br>every part of your life.</h2>
+    <p class="inside-lead">Plus Prompt Stacks, Power Moves, Family & Parenting, a 30-Day Challenge, and a Quick-Start Checklist to get both of you running in 30 minutes.</p>
+    <div class="sections-grid">
+      <div class="section-row">
+        <div class="section-num">10</div>
+        <div class="section-text">
+          <div class="section-name">Business Operations</div>
+          <div class="section-desc">Follow-ups, proposals, SOPs, hiring, bad reviews</div>
+        </div>
+      </div>
+      <div class="section-row">
+        <div class="section-num">8</div>
+        <div class="section-text">
+          <div class="section-name">Calendar & Coordination</div>
+          <div class="section-desc">Block time, sync schedules, find free evenings</div>
+        </div>
+      </div>
+      <div class="section-row">
+        <div class="section-num">10</div>
+        <div class="section-text">
+          <div class="section-name">Communication</div>
+          <div class="section-desc">Hard texts, negotiations, apologies, networking</div>
+        </div>
+      </div>
+      <div class="section-row">
+        <div class="section-num">8</div>
+        <div class="section-text">
+          <div class="section-name">Marketing & Content</div>
+          <div class="section-desc">Captions, newsletters, bios, referral asks</div>
+        </div>
+      </div>
+      <div class="section-row">
+        <div class="section-num">8</div>
+        <div class="section-text">
+          <div class="section-name">Lifestyle & Home</div>
+          <div class="section-desc">Date nights, meal planning, trips, big decisions</div>
+        </div>
+      </div>
+      <div class="section-row">
+        <div class="section-num">6</div>
+        <div class="section-text">
+          <div class="section-name">Mindset & Strategy</div>
+          <div class="section-desc">Monthly debrief, 90-day vision, stress-testing ideas</div>
+        </div>
+      </div>
+      <div class="section-row">
+        <div class="section-num">6</div>
+        <div class="section-text">
+          <div class="section-name">Prompt Stacks</div>
+          <div class="section-desc">Complete workflows — Monday Morning, Content Sprint, Sunday Reset</div>
+        </div>
+      </div>
+      <div class="section-row">
+        <div class="section-num">11</div>
+        <div class="section-text">
+          <div class="section-name">Power Moves</div>
+          <div class="section-desc">Pricing, delegation, crisis response, revenue audit</div>
+        </div>
+      </div>
+      <div class="section-row">
+        <div class="section-num">10</div>
+        <div class="section-text">
+          <div class="section-name">Family & Parenting</div>
+          <div class="section-desc">School week, babysitter brief, parenting disagreements</div>
+        </div>
+      </div>
+      <div class="section-row">
+        <div class="section-num">30</div>
+        <div class="section-text">
+          <div class="section-name">30-Day AI Challenge</div>
+          <div class="section-desc">One action per day to build the habit for good</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FREE KIT -->
+<section class="free-kit" id="free-kit">
+  <div class="free-kit-inner">
+    <div>
+      <p class="label">Start free</p>
+      <h2>Try 10 prompts before you buy anything.</h2>
+      <p>The Power Couple AI Starter Kit gives you 5 business prompts and 5 lifestyle prompts — ready to use right now. Free instant download on Gumroad.</p>
+      <ul class="kit-features">
+        <li>5 business prompts — follow-ups, reviews, priorities, offer copy</li>
+        <li>5 lifestyle prompts — weekly planning, date nights, meal ideas</li>
+        <li>USE TOGETHER prompts built for both of you</li>
+        <li>Before You Start guide — how to get the best results</li>
+        <li>Claude Projects explainer — set it up in 5 minutes</li>
+      </ul>
+      <a class="btn-primary" href="https://powercoupleai.gumroad.com/l/starter-kit" target="_blank">Download the Free Starter Kit</a>
+    </div>
+    <div class="kit-card">
+      <div class="kit-card-title">The Full Playbook</div>
+      <h3>Power Couple AI Playbook</h3>
+      <div class="kit-card-sub">Everything. For both of you.</div>
+      <div class="kit-price">$22</div>
+      <div class="kit-price-label">One-time · Instant download</div>
+      <a class="btn-kit" href="https://powercoupleai.gumroad.com/l/azyfkg" target="_blank">Get the Full Playbook</a>
+      <a class="btn-kit-ghost" href="https://powercoupleai.gumroad.com/l/starter-kit" target="_blank">Start with the free kit first</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testimonial">
+  <div class="testimonial-inner">
+    <span class="quote-mark">"</span>
+    <blockquote>I don't really know AI and I would totally use this and pay $22 for it.</blockquote>
+    <cite>— Early reviewer, small business owner</cite>
+  </div>
+</section>
+
+<!-- BUY -->
+<section class="buy" id="buy">
+  <div class="buy-inner">
+    <p class="label">Ready to get started?</p>
+    <h2>The couples winning right now<br>aren't smarter.<br>They just have <em>a better system.</em></h2>
+    <p class="buy-desc">71 prompts. 6 stacks. A 30-day habit-building system. Built for two. Less than a coffee each.</p>
+    <div class="price-block">
+      <div class="price-amt">$22</div>
+    </div>
+    <p class="price-note">One-time payment · PDF instant download · Works with Claude free or paid</p>
+    <br>
+    <a class="btn-buy" href="https://powercoupleai.gumroad.com/l/azyfkg" target="_blank">Get the Power Couple AI Playbook</a>
+    <p class="buy-guarantee">Not sure yet? <a href="https://powercoupleai.gumroad.com/l/starter-kit" style="color:var(--gold);text-decoration:none;">Download the free Starter Kit first →</a></p>
+    <div class="buy-includes">
+      <span>39 Pages</span>
+      <span>71 Prompts</span>
+      <span>6 Stacks</span>
+      <span>30-Day Challenge</span>
+      <span>Quick-Start Checklist</span>
+      <span>Built for Two</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">Power Couple AI</div>
+  <div class="footer-links">
+    <a href="https://powercoupleai.gumroad.com" target="_blank">Gumroad Store</a>
+    <a href="https://powercoupleai.gumroad.com/l/starter-kit" target="_blank">Free Starter Kit</a>
+  </div>
+  <p class="footer-copy">© 2026 Power Couple AI · Tcdesigns LLC · All rights reserved.</p>
+</footer>
+
+</body>
+</html>
